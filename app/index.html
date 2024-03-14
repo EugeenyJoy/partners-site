@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The first site of temporary ads">
+    <title>advertemp</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(93648033, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/93648033" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    
+    <div class="wrapper">
+        <div class="content-wrapper">
+            <header>
+                <nav>
+                    <div><a href="/about">About</a></div>
+                    <div><a href="/rules">Rules</a></div>
+                </nav>
+            </header>
+            <div class="main-content">
+
+                <div class="main__top">
+                    <h2 class=main__top-header>Yesturday`s top</h2>
+                    <div class="main__top-inner"></div>
+                    <!-- <p style="font-size: 2.5em; font-weight: 600; margin: 10px 0 40px;">топ</p> -->
+                </div>
+
+                <div class="top-banner">top banner</div>
+
+                <div class="main-input">
+                    <div class="input__expand-form">Add a card</div>
+                    <div class="input__form-wrapper">
+                        <form action="" method="post" id="addRefItemForm" enctype="multipart/form-data">
+                            <label for="input_title">Title <sub style="font-size: 0.8em;">(max 50 characters)</sub> <sup style="color:red;">*</sup></label>
+                            <span class="alert-input_title alert">Field required, max 50 characters</span>
+                            <input type="text" id="input_title" class="addRefIteminput" name="title" maxlength="50">
+                            <label for="input_description">Description  <sub style="font-size: 0.8em;">(max 250 characters)</sub> <sup style="color:red;">*</sup></label>
+                            <span class="alert-input_description alert">Field required, max 250 characters</span>
+                            <textarea id="input_description" class="addRefIteminput" name="description" maxlength="250"></textarea>
+                            <label for="input_author">Author <sub style="font-size: 0.8em;">(max 20 characters)</sub></label>
+                            <span class="alert-input_author alert">Field required, max 20 characters</span>
+                            <input type="text" id="input_author" class="addRefIteminput" name="author" maxlength="20">
+                            <label for="input_tag">Tag  <sub style="font-size: 0.8em;">(max 20 characters)</sub> <sup style="color:red;">*</sup></label>
+                            <span class="alert-input_author alert">Field required, max 20 characters</span>
+                            <input type="text" id="input_tag" class="addRefIteminput" name="tag" maxlength="20">
+                            <label for="input_img">Picture <sub style="font-size: 0.8em;">(file jpg/png max 2 мб)</sub></label>
+                            <span class="alert-input_image">The file size exceeds 2 MB</span>
+                            <input type="file" id="input_img" class="addRefIteminput" name="image">
+                            <div>Captcha</div>
+                            <label class="heat-slider heat-slider--v">
+                                <span class="heat-slider--input">
+                                    <input type="range" id="Crange" value="0" min="0" max="5" step="0.01" oninput="captcha(event)" />
+                                </span>
+                            </label>
+
+                            <output>Slide to unlock</output>
+                            <div id="addRefItemFormBtn">Send</div>
+                            <div class="link-rules">by clicking the "submit" button, you agree to the <a href="/rules">rules of the site</a> </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="main__nav">
+                    <div class="main__nav-items">
+                        <div class="main__nav-item active" data-tag="">All</div>
+                        <div class="main__nav-item" data-tag=" ">&#128293;</div>
+                    </div>
+                </div>
+
+                <div class="main__items"></div>
+
+            </div>
+            <footer>
+               2023.04.30 (beta v1.3.0)  created by eugeenyjoy
+            </footer>
+        </div>
+    </div>
+    <script src="./assets/js/main.min.js"></script>
+</body>
+</html>
